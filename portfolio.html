@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+
+    <link href="./css/main.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="topline container">
+      <nav class="topline__navigator">
+        <a href="./index.html" class="logo"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <ul class="navigator-site">
+          <li class="navigator-site__list">
+            <a href="./index.html" class="navigator-site__page">Студія</a>
+          </li>
+          <li class="navigator-site__list">
+            <a href="./portfolio.html" class="navigator-site__page this"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="navigator-site__list">
+            <a href="" class="navigator-site__page">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="topline__contakts">
+        <li class="contakts-list">
+          <a href="mailto:info@devstudio.com" class="contakts-list__link">
+            <svg width="16px" height="12px" class="contakts-list__icon">
+              <use href="./images/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contakts-list">
+          <a href="tel:+380961111111" class="contakts-list__link">
+            <svg width="10px" height="16px" class="contakts-list__icon">
+              <use href="./images/symbol-defs.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <svg width="40px" height="40px" class="contakts-list__menu">
+        <use href="./images/symbol-defs.svg#menu"></use>
+      </svg>
+    </header>
+    <div class="head-modal head-modal--close">
+      <div class="header-modal">
+        <ul class="navigator-modal-site">
+          <li class="navigator-modal-site__list">
+            <a href="./index.html" class="navigator-modal-site__page">Студія</a>
+          </li>
+          <li class="navigator-modal-site__list">
+            <a href="./portfolio.html" class="navigator-modal-site__page"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="navigator-modal-site__list">
+            <a href="" class="navigator-modal-site__page">Контакти</a>
+          </li>
+        </ul>
+        <ul class="header-modal__contakts contakts-modal">
+          <li class="contakts-modal__list">
+            <a href="tel:+380961111111" class="contakts-modal__tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="contakts-modal__list">
+            <a href="mailto:info@devstudio.com" class="contakts-modal__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="social-modal">
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Instagram </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Twitter </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Facebook </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Linkedin </a>
+          </li>
+        </ul>
+        <svg width="30px" height="30px" class="header-modal__close">
+          <use href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <div class="filter">
+            <button type="button" class="filter__button">Усі</button>
+            <button type="button" class="filter__button">Веб-сайти</button>
+            <button type="button" class="filter__button">Додатки</button>
+            <button type="button" class="filter__button">Дизайн</button>
+            <button type="button" class="filter__button">Маркетинг</button>
+          </div>
+          <ul class="portfolio__cards">
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/texnokrjak.jpg    1x,
+                      ./images/portfolio/texnokrjak@2x.jpg 2x
+                    "
+                    src="./images/portfolio/texnokrjak.jpg"
+                    alt="лоп-топ"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Технокряк</h2>
+                  <p class="card-works__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/new-orlean.jpg    1x,
+                      ./images/portfolio/new-orlean@2x.jpg 2x
+                    "
+                    src="./images/portfolio/new-orlean.jpg"
+                    alt="постер матчу новий орлєан проти золотої зірки"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="card-works__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/seafood.jpg    1x,
+                      ./images/portfolio/seafood@2x.jpg 2x
+                    "
+                    src="./images/portfolio/seafood.jpg"
+                    alt="логотип ресторану морскої їжи"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Ресторан Seafood</h2>
+                  <p class="card-works__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/prime.jpg    1x,
+                      ./images/portfolio/prime@2x.jpg 2x
+                    "
+                    src="./images/portfolio/prime.jpg"
+                    alt="навушники"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Проєкт Prime</h2>
+                  <p class="card-works__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/boxes.jpg    1x,
+                      ./images/portfolio/boxes@2x.jpg 2x
+                    "
+                    src="./images/portfolio/boxes.jpg"
+                    alt="дві коробочки"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Проєкт Boxes</h2>
+                  <p class="card-works__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/inspiration.jpg    1x,
+                      ./images/portfolio/inspiration@2x.jpg 2x
+                    "
+                    src="./images/portfolio/inspiration.jpg"
+                    alt="монітор"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Inspiration has no Borders</h2>
+                  <p class="card-works__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/limited-edition.jpg    1x,
+                      ./images/portfolio/limited-edition@2x.jpg 2x
+                    "
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="книжка"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Видання Limited Edition</h2>
+                  <p class="card-works__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/lab.jpg    1x,
+                      ./images/portfolio/lab@2x.jpg 2x
+                    "
+                    src="./images/portfolio/lab.jpg"
+                    alt="лейба лабораторії"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Проєкт LAB</h2>
+                  <p class="card-works__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-works">
+              <a href="" class="card-works__link">
+                <div class="card-works__modal-box">
+                  <img
+                    srcset="
+                      ./images/portfolio/growing-business.jpg    1x,
+                      ./images/portfolio/growing-business@2x.jpg 2x
+                    "
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="хтось процює на лоп-топ"
+                    width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="card-works__content">
+                  <h2 class="card-works__title">Growing Business</h2>
+                  <p class="card-works__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="basement">
+      <div class="basement-content container">
+        <div class="basement-address">
+          <a href="./index.html" class="logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
+          <address class="basement-address__content">
+            <p class="basement-address__text">
+              м. Київ, пр-т Лесі Українки, 26
+            </p>
+            <ul class="basement-address__list">
+              <li class="basement-address__list-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="basement-address__link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="basement-address__list-item">
+                <a href="tel:+380961111111" class="basement-address__link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="basement-content__join join-box">
+          <h3 class="join-box__header">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="join-box__list">
+            <li class="join-box__list-item">
+              <a href="" class="join-box__networks">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-box__list-item">
+              <a href="" class="join-box__networks">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-box__list-item">
+              <a href="" class="join-box__networks">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-box__list-item">
+              <a href="" class="join-box__networks">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mailing basement-content__mailing">
+          <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <form class="mailing__form">
+            <div class="mailing__group">
+              <label>
+                <input
+                  type="email"
+                  class="mailing__input"
+                  name="mailing"
+                  placeholder="E-mail"
+                />
+              </label>
+              <div class="mailing__button-group">
+                <button class="mailing__button" type="submit">
+                  Підписатися
+                </button>
+                <svg width="24px" height="24px" class="mailing__send-svg">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        document
+          .querySelector(".mailing__form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}:${value}`)
+            );
+          });
+      })();
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector(".contakts-list__menu"),
+          closeModalBtn: document.querySelector(".header-modal__close"),
+          modal: document.querySelector(".head-modal"),
+        };
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle("head-modal--close");
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.companies {
+  @extend %section;
+  &__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+.client {
+  @extend %off-style;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  @media (max-width: 767px) {
+    &__blok:nth-child(n + 3) {
+      margin-top: 15px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &__blok:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &__blok:nth-child(n + 4) {
+      margin-top: 30px;
+    }
+  }
+  &__link {
+    color: $networks;
+    width: 210px;
+    border: 1px solid $networks;
+    border-radius: 4px;
+    padding: 16px 52px;
+    display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 768px) {
+      width: 226px;
+      padding: 16px 60px;
+    }
+    @media (min-width: 1200px) {
+      width: 170px;
+      padding: 16px 32px;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+  &__svg {
+    fill: currentColor;
+  }
+}

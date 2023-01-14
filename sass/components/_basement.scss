@@ -1,0 +1,162 @@
+.basement {
+  background-color: $background-hero;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $white;
+}
+.basement-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    align-items: flex-start;
+    flex-direction: row;
+    &__join {
+      margin-left: 165px;
+    }
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+    &__join {
+      margin-left: 70px;
+    }
+    &__mailing {
+      margin-left: auto;
+    }
+  }
+}
+.basement-address {
+  margin-bottom: 60px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    margin-bottom: 0px;
+    text-align: start;
+  }
+  &__content {
+    font-style: normal;
+  }
+  & .logo {
+    display: inline-block;
+    color: $white;
+    margin-bottom: 28px;
+  }
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    @extend %off-style;
+    & &-item + &-item {
+      margin-top: 12px;
+    }
+  }
+  &__link {
+    color: $basement-link;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.join-box {
+  margin-bottom: 60px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
+  &__header {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    @extend %off-style;
+    display: flex;
+  }
+  &__networks {
+    @extend %networks;
+    fill: $white;
+    background-color: $networks-back;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+  &__list-item:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.mailing {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+  &__input {
+    width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $background-hero;
+    color: $white;
+    padding: 15px 16px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 1200px) {
+      width: 358px;
+    }
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+  &__button-group {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    @media (min-width: 1200px) {
+      margin-left: 12px;
+      margin-top: 0px;
+    }
+  }
+  &__button {
+    @extend %button;
+    text-align: left;
+    padding-left: 28px;
+  }
+  &__send-svg {
+    position: absolute;
+    right: 153px;
+    top: 13px;
+    @media (min-width: 1200px) {
+      right: 28px;
+    }
+  }
+}

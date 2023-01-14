@@ -1,0 +1,16 @@
+.logo {
+  color: $black;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
+
+  &__text {
+    color: $accent-color;
+  }
+}
