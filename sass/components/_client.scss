@@ -21,6 +21,10 @@
   justify-content: space-between;
   padding-left: 0px;
   @media (max-width: 449px) {
+    &__blok {
+      margin-left: auto;
+      margin-right: auto;
+    }
     &__blok:not(:first-child) {
       margin-top: 15px;
     }
