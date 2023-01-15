@@ -23,6 +23,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $white;
+  @media (min-width: 1200px) {
+    min-width: 528px;
+  }
   &__close {
     position: absolute;
     width: 30px;

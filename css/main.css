@@ -1012,6 +1012,11 @@ img {
   border-radius: 4px;
   background-color: #ffffff;
 }
+@media (min-width: 1200px) {
+  .modal-window {
+    min-width: 528px;
+  }
+}
 .modal-window__close {
   position: absolute;
   width: 30px;
