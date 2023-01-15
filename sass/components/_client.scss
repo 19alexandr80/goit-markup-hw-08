@@ -3,11 +3,15 @@
   &__header {
     font-weight: 700;
     font-size: 28px;
+    @media (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .client {
@@ -16,7 +20,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
-  @media (max-width: 767px) {
+  @media (max-width: 449px) {
+    &__blok:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+  @media (min-width: 450px) and (max-width: 767px) {
     &__blok:nth-child(n + 3) {
       margin-top: 15px;
     }
